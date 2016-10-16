@@ -18,7 +18,8 @@ fn main() {
     for _ in 0..count {
         let newline: String = read_line();
         let mut splitter = newline.split_whitespace();
-        let name = splitter.next().unwrap().to_string();
+
+        let name  = splitter.next().unwrap().to_string();
         let phone = splitter.next().unwrap().to_string();
 
         phonebook.insert(name, phone);
